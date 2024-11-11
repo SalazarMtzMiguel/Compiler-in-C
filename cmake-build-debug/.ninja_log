@@ -16,3 +16,12 @@
 113	372	7523990830140509	Compiler.exe	ff04e2553afeebf2
 5	99	7523992104036107	CMakeFiles/Compiler.dir/src/lexer.c.obj	51d857419d376008
 99	215	7523992104983928	Compiler.exe	ff04e2553afeebf2
+9	246	7530649608538962	CMakeFiles/Compiler.dir/src/lexer.c.obj	51d857419d376008
+247	782	7530649610909175	Compiler.exe	ff04e2553afeebf2
+39	192	7530691713021019	CMakeFiles/Compiler.dir/src/main.c.obj	b2453217ae679382
+50	207	7530691713118283	CMakeFiles/Compiler.dir/src/lexer.c.obj	51d857419d376008
+207	354	7530691714688744	Compiler.exe	ff04e2553afeebf2
+25	123	7530695264290791	CMakeFiles/Compiler.dir/src/semantic.c.obj	9686f5f0ad4e317
+9	129	7530695264118326	CMakeFiles/Compiler.dir/src/main.c.obj	b2453217ae679382
+16	136	7530695264196249	CMakeFiles/Compiler.dir/src/lexer.c.obj	51d857419d376008
+136	323	7530695265389203	Compiler.exe	ff04e2553afeebf2
