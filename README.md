@@ -3,27 +3,29 @@ Este proyecto es un compilador básico escrito en C, diseñado para procesar un 
 
 Estructura del Proyecto
 El proyecto está organizado en la siguiente estructura de carpetas y archivos:
-
+```
 project-root/
-├── build/                  # Archivos de compilación generados por CMake
-├── src/                    # Código fuente del compilador
-│   ├── main.c              # Punto de entrada del compilador
-│   ├── lexer.c             # Analizador léxico
-│   ├── parser.c            # Analizador sintáctico
-│   ├── semantic_analyzer.c # Analizador semántico
-│   ├── codegen.c           # Generador de código
-│   └── utils.c             # Funciones utilitarias
-├── include/                # Archivos de cabecera
+├── build/                   # Archivos de compilación generados por CMake
+├── src/                     # Código fuente del compilador
+│   ├── main.c               # Punto de entrada del compilador
+│   ├── lexer.c              # Analizador léxico
+│   ├── parser.c             # Analizador sintáctico
+│   ├── semantic_analyzer.c  # Analizador semántico
+│   ├── codegen.c            # Generador de código
+│   └── utils.c              # Funciones utilitarias
+├── include/                 # Archivos de cabecera
 │   ├── lexer.h
 │   ├── parser.h
 │   ├── semantic_analyzer.h
 │   ├── codegen.h
 │   └── utils.h
-├── tests/                  # Pruebas y archivos de entrada para el compilador
-├── CMakeLists.txt          # Archivo de configuración de CMake
-└── README.md               # Archivo de documentación
+├── tests/                   # Pruebas y archivos de entrada para el compilador
+├── CMakeLists.txt           # Archivo de configuración de CMake
+└── README.md                # Archivo de documentación
 Compilación
 Para compilar el proyecto, sigue estos pasos:
+```
+
 
 Navega al directorio del proyecto:
 
