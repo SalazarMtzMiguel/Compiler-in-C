@@ -22,7 +22,6 @@ project-root/
 ├── tests/                  # Pruebas y archivos de entrada para el compilador
 ├── CMakeLists.txt          # Archivo de configuración de CMake
 └── README.md               # Archivo de documentación
-
 Compilación
 Para compilar el proyecto, sigue estos pasos:
 
