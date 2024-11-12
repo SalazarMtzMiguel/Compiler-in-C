@@ -1,18 +1,14 @@
-cmake_minimum_required(VERSION 3.29)
-project(Compiler C)
+cmake_minimum_required(VERSION 3.10)
+project(Compiler)
 
+# Set the C standard
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Compiler
-        src/main.c
-        src/lexer.c
-        include/lexer.h
-        src/parser.c
-        include/parser.h
-        src/semantic.c
-        include/semantic.h
-        src/codegen.c
-        include/codegen.h
-        src/utils.c
-        include/utils.h
-)
+# Include directories
+include_directories(include)
+
+# Source files
+file(GLOB SOURCES "src/*.c")
+
+# Add the executable
+add_executable(compiler ${SOURCES})
