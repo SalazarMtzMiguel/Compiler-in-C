@@ -8,3 +8,16 @@
 7	72	7518613282301319	CMakeFiles/Compiler.dir/src/parser.c.obj	1ba6af5b55bbf0d
 16	74	7518613282394657	CMakeFiles/Compiler.dir/src/utils.c.obj	7f7cd254ae1ac349
 24	113	7530698535123872	CMakeFiles/Compiler.dir/src/semantic.c.obj	9686f5f0ad4e317
+48	208	7535119578733845	CMakeFiles/compiler.dir/src/parser.c.obj	64f255649294112e
+35	208	7535119578607217	CMakeFiles/compiler.dir/src/codegen.c.obj	ba98159d4b6c23c3
+59	209	7535119578836997	CMakeFiles/compiler.dir/src/utils.c.obj	94b220d36b9a3836
+54	237	7535119578796982	CMakeFiles/compiler.dir/src/semantic.c.obj	a6d144bbcb0a8b71
+44	240	7535119578689463	CMakeFiles/compiler.dir/src/main.c.obj	5b75423dc32bf128
+41	243	7535119578658805	CMakeFiles/compiler.dir/src/lexer.c.obj	340a2a993485ce14
+243	498	7535119580678750	compiler.exe	5da872fa17a5d19e
+6	91	7535129348618697	CMakeFiles/compiler.dir/src/main.c.obj	5b75423dc32bf128
+10	99	7535129348659743	CMakeFiles/compiler.dir/src/parser.c.obj	64f255649294112e
+99	197	7535129349553532	compiler.exe	5da872fa17a5d19e
+5	90	7535133194909748	CMakeFiles/compiler.dir/src/main.c.obj	5b75423dc32bf128
+13	91	7535133194982097	CMakeFiles/compiler.dir/src/semantic.c.obj	a6d144bbcb0a8b71
+9	104	7535133194951233	CMakeFiles/compiler.dir/src/parser.c.obj	64f255649294112e

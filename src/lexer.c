@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <string.h>
 
-const char *keywords[] = {"int", "char", "if", "else", "while", "for", "return", "void", "print", "hola"};
+const char *keywords[] = {"int", "char", "if", "else", "while", "for", "return", "void", "print", "break","input"};
 const char *operators[] = {"+", "-", "*", "/", "%", "==", "!=", "<", ">", "<=", ">=", "&&", "||", "="};
 const char *symbols[] = {"{", "}", "(", ")", "[", "]", ";", ","};
 

@@ -3,9 +3,47 @@
 //
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/lexer.h"
-#include "../include/semantic.h"
+#include "lexer.h"
+#include "parser.h"
+#include "semantic.h"
 
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        fprintf(stderr, "Usage: %s <filename.cstm>\n", argv[0]);
+        return 1;
+    }
+
+    const char *filename = argv[1];
+    FILE *file = fopen(filename, "r");
+    if (!file) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    fseek(file, 0, SEEK_END);
+    long file_size = ftell(file);
+    fseek(file, 0, SEEK_SET);
+
+    char *input = malloc(file_size + 1);
+    if (!input) {
+        perror("Error allocating memory");
+        fclose(file);
+        return 1;
+    }
+
+    fread(input, 1, file_size, file);
+    input[file_size] = '\0';
+    fclose(file);
+
+    // Initialize parser and parse the program
+    Parser parser;
+    init_parser(&parser, input);
+    parse_program(&parser);
+
+    free(input);
+    return 0;
+}
+/*
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         fprintf(stderr, "Usage: %s <filename.cstm>\n", argv[0]);
@@ -55,4 +93,4 @@ int main(int argc, char *argv[]) {
 
     free(input);
     return 0;
-}
+}*/
