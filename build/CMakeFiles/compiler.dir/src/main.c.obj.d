@@ -20,5 +20,6 @@ CMakeFiles/compiler.dir/src/main.c.obj: \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
  C:/msys64/ucrt64/include/errno.h \
  C:/Users/Mikec/CLionProjects/Compiler/include/lexer.h \
- C:/Users/Mikec/CLionProjects/Compiler/include/semantic.h \
- C:/Users/Mikec/CLionProjects/Compiler/include/lexer.h
+ C:/Users/Mikec/CLionProjects/Compiler/include/parser.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/lexer.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/semantic.h

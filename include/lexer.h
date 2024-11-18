@@ -8,14 +8,14 @@
 #define MAX_TOKEN_LENGTH 100
 
 typedef enum {
-    TOKEN_KEYWORD,      //#1
-    TOKEN_IDENTIFIER,   //#2
-    TOKEN_NUMBER,       //#3
-    TOKEN_CHAR,         //#4
-    TOKEN_STRING,       //#5
-    TOKEN_OPERATOR,     //#6
-    TOKEN_SYMBOL,       //#7
-    TOKEN_UNKNOWN       //#8
+    TOKEN_KEYWORD,      //#0
+    TOKEN_IDENTIFIER,   //#1
+    TOKEN_NUMBER,       //#2
+    TOKEN_CHAR,         //#3
+    TOKEN_STRING,       //#4
+    TOKEN_OPERATOR,     //#5
+    TOKEN_SYMBOL,       //#6
+    TOKEN_UNKNOWN       //#7
 } TokenType;
 
 typedef struct {

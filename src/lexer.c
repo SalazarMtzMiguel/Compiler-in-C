@@ -4,10 +4,16 @@
 #include <ctype.h>
 #include <string.h>
 
-const char *keywords[] = {"int", "char", "if", "else", "while", "for", "return", "void", "print", "break","input"};
+// List of recognized keywords
+const char *keywords[] = {"int", "char", "if", "else", "while", "for", "return", "void", "print", "break", "input"};
+
+// List of recognized operators
 const char *operators[] = {"+", "-", "*", "/", "%", "==", "!=", "<", ">", "<=", ">=", "&&", "||", "="};
+
+// List of recognized symbols
 const char *symbols[] = {"{", "}", "(", ")", "[", "]", ";", ","};
 
+// Constants to calculate the number of elements in each list
 #define KEYWORD_COUNT (sizeof(keywords) / sizeof(keywords[0]))
 #define OPERATOR_COUNT (sizeof(operators) / sizeof(operators[0]))
 #define SYMBOL_COUNT (sizeof(symbols) / sizeof(symbols[0]))
@@ -44,8 +50,37 @@ Token get_next_token(const char **input) {
     token.type = TOKEN_UNKNOWN;
     token.value[0] = '\0';
 
+    // Skip whitespace
     while (isspace(**input)) (*input)++;
 
+    // Identify single-character symbols
+    char symbol[2] = {*(*input), '\0'};
+    if (is_symbol(symbol)) {
+        token.value[0] = *(*input)++;
+        token.value[1] = '\0';
+        token.type = TOKEN_SYMBOL;
+        return token;
+    }
+
+    // Identify operators (one or two characters)
+    char op[3] = {*(*input), *(*input + 1), '\0'};
+    if (is_operator(op)) {
+        token.value[0] = *(*input)++;
+        token.value[1] = *(*input)++;
+        token.value[2] = '\0';
+        token.type = TOKEN_OPERATOR;
+        return token;
+    } else {
+        op[1] = '\0';
+        if (is_operator(op)) {
+            token.value[0] = *(*input)++;
+            token.value[1] = '\0';
+            token.type = TOKEN_OPERATOR;
+            return token;
+        }
+    }
+
+    // Identify keywords or identifiers
     if (isalpha(**input) || **input == '_') {
         int length = 0;
         while (isalnum(**input) || **input == '_') {
@@ -53,51 +88,49 @@ Token get_next_token(const char **input) {
         }
         token.value[length] = '\0';
         token.type = is_keyword(token.value) ? TOKEN_KEYWORD : TOKEN_IDENTIFIER;
-    } else if (isdigit(**input)) {
+        return token;
+    }
+
+    // Identify numbers
+    if (isdigit(**input)) {
         int length = 0;
         while (isdigit(**input)) {
             token.value[length++] = *(*input)++;
         }
         token.value[length] = '\0';
         token.type = TOKEN_NUMBER;
-    } else if (**input == '\'') {
-        if (**input == '\'' && *(*input + 2) == '\'') {
+        return token;
+    }
+
+    // Identify character literals
+    if (**input == '\'') {
+        (*input)++;
+        if (**input != '\0' && *(*input + 1) == '\'') {
             token.value[0] = *(*input)++;
             token.value[1] = *(*input)++;
-            token.value[2] = *(*input)++;
-            token.value[3] = '\0';
+            token.value[2] = '\0';
             token.type = TOKEN_CHAR;
         } else {
             token.type = TOKEN_UNKNOWN;
         }
-    } else if (**input == '\"') {
+        return token;
+    }
+
+    // Identify string literals
+    if (**input == '\"') {
         int length = 0;
-        token.value[length++] = *(*input)++;
+        (*input)++;
         while (**input != '\"' && **input != '\0') {
             token.value[length++] = *(*input)++;
         }
         if (**input == '\"') {
-            token.value[length++] = *(*input)++;
+            (*input)++;
             token.value[length] = '\0';
             token.type = TOKEN_STRING;
         } else {
             token.type = TOKEN_UNKNOWN;
         }
-    } else {
-        char op[3] = {0};
-        op[0] = *(*input)++;
-        op[1] = **input;
-        op[2] = '\0';
-
-        if (is_operator(op)) {
-            token.type = TOKEN_OPERATOR;
-            (*input)++;
-        } else if (is_symbol(op)) {
-            token.type = TOKEN_SYMBOL;
-        } else {
-            token.type = TOKEN_UNKNOWN;
-        }
-        strcpy(token.value, op);
+        return token;
     }
 
     return token;

@@ -1,4 +1,4 @@
-int(){
+int suma(int a, int b){
 print("hola mundo");
 int a;
 a=5;
@@ -7,5 +7,6 @@ b=10;
 int c;
 c=a+b;
 print(c);
-return 0;
+print("Adios");
+return c;
 }

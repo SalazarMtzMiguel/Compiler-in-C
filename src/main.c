@@ -7,6 +7,23 @@
 #include "parser.h"
 #include "semantic.h"
 
+void print_tokens(const char *input, const char *filename) {
+    FILE *file = fopen(filename, "w");
+    if (!file) {
+        perror("Error opening file");
+        return;
+    }
+
+    const char *input_ptr = input;
+    Token token;
+    while (*input_ptr != '\0') {
+        token = get_next_token(&input_ptr);
+        fprintf(file, "Token: %s, Type: %d\n", token.value, token.type);
+    }
+
+    fclose(file);
+}
+
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         fprintf(stderr, "Usage: %s <filename.cstm>\n", argv[0]);
@@ -35,6 +52,9 @@ int main(int argc, char *argv[]) {
     input[file_size] = '\0';
     fclose(file);
 
+    // Print tokens to lexer_output.txt
+    print_tokens(input, "lexer_output.txt");
+
     // Initialize parser and parse the program
     Parser parser;
     init_parser(&parser, input);
@@ -43,6 +63,7 @@ int main(int argc, char *argv[]) {
     free(input);
     return 0;
 }
+
 /*
 int main(int argc, char *argv[]) {
     if (argc < 2) {
