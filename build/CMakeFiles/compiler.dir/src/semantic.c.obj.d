@@ -3,6 +3,7 @@ CMakeFiles/compiler.dir/src/semantic.c.obj: \
  C:/Users/Mikec/CLionProjects/Compiler/include/semantic.h \
  C:/Users/Mikec/CLionProjects/Compiler/include/lexer.h \
  C:/Users/Mikec/CLionProjects/Compiler/include/parser.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/ast.h \
  C:/msys64/ucrt64/include/string.h C:/msys64/ucrt64/include/crtdefs.h \
  C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
  C:/msys64/ucrt64/include/_mingw_mac.h \

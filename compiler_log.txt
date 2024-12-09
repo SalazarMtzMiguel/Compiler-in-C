@@ -1,0 +1,65 @@
+Iniciando el proceso de compilacion
+Parser inicializado con entrada: main() {
+    int a = 5;
+    int b = 10;
+    int c = a + b;
+    print(a);
+    print(b);
+    print(c);
+}t
+Parseando programa
+Parseando declaracion: main
+Avanzado al siguiente token: (
+Avanzado al siguiente token: )
+Avanzado al siguiente token: {
+Avanzado al siguiente token: int
+Parseando bloque
+Parseando declaracion: int
+Avanzado al siguiente token: a
+Avanzado al siguiente token: =
+Avanzado al siguiente token: 5
+Parseando expresion: 5
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: int
+Parseando declaracion: int
+Avanzado al siguiente token: b
+Avanzado al siguiente token: =
+Avanzado al siguiente token: 10
+Parseando expresion: 10
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: int
+Parseando declaracion: int
+Avanzado al siguiente token: c
+Avanzado al siguiente token: =
+Avanzado al siguiente token: a
+Parseando expresion: a
+Avanzado al siguiente token: +
+Avanzado al siguiente token: b
+Parseando expresion: b
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: print
+Parseando declaracion: print
+Avanzado al siguiente token: (
+Avanzado al siguiente token: a
+Parseando expresion: a
+Avanzado al siguiente token: )
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: print
+Parseando declaracion: print
+Avanzado al siguiente token: (
+Avanzado al siguiente token: b
+Parseando expresion: b
+Avanzado al siguiente token: )
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: print
+Parseando declaracion: print
+Avanzado al siguiente token: (
+Avanzado al siguiente token: c
+Parseando expresion: c
+Avanzado al siguiente token: )
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: }
+Avanzado al siguiente token: t
+Avanzado al siguiente token: 
+Generando IR para el programa
+Proceso de compilacion finalizado

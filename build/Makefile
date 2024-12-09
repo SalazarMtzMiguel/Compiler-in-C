@@ -128,6 +128,78 @@ compiler/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/build
 .PHONY : compiler/fast
 
+src/address_table.obj: src/address_table.c.obj
+.PHONY : src/address_table.obj
+
+# target to build an object file
+src/address_table.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/address_table.c.obj
+.PHONY : src/address_table.c.obj
+
+src/address_table.i: src/address_table.c.i
+.PHONY : src/address_table.i
+
+# target to preprocess a source file
+src/address_table.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/address_table.c.i
+.PHONY : src/address_table.c.i
+
+src/address_table.s: src/address_table.c.s
+.PHONY : src/address_table.s
+
+# target to generate assembly for a file
+src/address_table.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/address_table.c.s
+.PHONY : src/address_table.c.s
+
+src/asm.obj: src/asm.c.obj
+.PHONY : src/asm.obj
+
+# target to build an object file
+src/asm.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/asm.c.obj
+.PHONY : src/asm.c.obj
+
+src/asm.i: src/asm.c.i
+.PHONY : src/asm.i
+
+# target to preprocess a source file
+src/asm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/asm.c.i
+.PHONY : src/asm.c.i
+
+src/asm.s: src/asm.c.s
+.PHONY : src/asm.s
+
+# target to generate assembly for a file
+src/asm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/asm.c.s
+.PHONY : src/asm.c.s
+
+src/ast.obj: src/ast.c.obj
+.PHONY : src/ast.obj
+
+# target to build an object file
+src/ast.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/ast.c.obj
+.PHONY : src/ast.c.obj
+
+src/ast.i: src/ast.c.i
+.PHONY : src/ast.i
+
+# target to preprocess a source file
+src/ast.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/ast.c.i
+.PHONY : src/ast.c.i
+
+src/ast.s: src/ast.c.s
+.PHONY : src/ast.s
+
+# target to generate assembly for a file
+src/ast.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/ast.c.s
+.PHONY : src/ast.c.s
+
 src/codegen.obj: src/codegen.c.obj
 .PHONY : src/codegen.obj
 
@@ -152,6 +224,30 @@ src/codegen.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/codegen.c.s
 .PHONY : src/codegen.c.s
 
+src/ir.obj: src/ir.c.obj
+.PHONY : src/ir.obj
+
+# target to build an object file
+src/ir.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/ir.c.obj
+.PHONY : src/ir.c.obj
+
+src/ir.i: src/ir.c.i
+.PHONY : src/ir.i
+
+# target to preprocess a source file
+src/ir.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/ir.c.i
+.PHONY : src/ir.c.i
+
+src/ir.s: src/ir.c.s
+.PHONY : src/ir.s
+
+# target to generate assembly for a file
+src/ir.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/ir.c.s
+.PHONY : src/ir.c.s
+
 src/lexer.obj: src/lexer.c.obj
 .PHONY : src/lexer.obj
 
@@ -175,6 +271,30 @@ src/lexer.s: src/lexer.c.s
 src/lexer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/lexer.c.s
 .PHONY : src/lexer.c.s
+
+src/logger.obj: src/logger.c.obj
+.PHONY : src/logger.obj
+
+# target to build an object file
+src/logger.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/logger.c.obj
+.PHONY : src/logger.c.obj
+
+src/logger.i: src/logger.c.i
+.PHONY : src/logger.i
+
+# target to preprocess a source file
+src/logger.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/logger.c.i
+.PHONY : src/logger.c.i
+
+src/logger.s: src/logger.c.s
+.PHONY : src/logger.s
+
+# target to generate assembly for a file
+src/logger.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/src/logger.c.s
+.PHONY : src/logger.c.s
 
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
@@ -281,12 +401,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... compiler
+	@echo ... src/address_table.obj
+	@echo ... src/address_table.i
+	@echo ... src/address_table.s
+	@echo ... src/asm.obj
+	@echo ... src/asm.i
+	@echo ... src/asm.s
+	@echo ... src/ast.obj
+	@echo ... src/ast.i
+	@echo ... src/ast.s
 	@echo ... src/codegen.obj
 	@echo ... src/codegen.i
 	@echo ... src/codegen.s
+	@echo ... src/ir.obj
+	@echo ... src/ir.i
+	@echo ... src/ir.s
 	@echo ... src/lexer.obj
 	@echo ... src/lexer.i
 	@echo ... src/lexer.s
+	@echo ... src/logger.obj
+	@echo ... src/logger.i
+	@echo ... src/logger.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

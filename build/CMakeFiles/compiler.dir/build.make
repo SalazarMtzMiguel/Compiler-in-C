@@ -71,11 +71,56 @@ include CMakeFiles/compiler.dir/flags.make
 CMakeFiles/compiler.dir/codegen:
 .PHONY : CMakeFiles/compiler.dir/codegen
 
+CMakeFiles/compiler.dir/src/address_table.c.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/src/address_table.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
+CMakeFiles/compiler.dir/src/address_table.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/address_table.c
+CMakeFiles/compiler.dir/src/address_table.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/compiler.dir/src/address_table.c.obj"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/address_table.c.obj -MF CMakeFiles\compiler.dir\src\address_table.c.obj.d -o CMakeFiles\compiler.dir\src\address_table.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\address_table.c
+
+CMakeFiles/compiler.dir/src/address_table.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compiler.dir/src/address_table.c.i"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Mikec\CLionProjects\Compiler\src\address_table.c > CMakeFiles\compiler.dir\src\address_table.c.i
+
+CMakeFiles/compiler.dir/src/address_table.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compiler.dir/src/address_table.c.s"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Mikec\CLionProjects\Compiler\src\address_table.c -o CMakeFiles\compiler.dir\src\address_table.c.s
+
+CMakeFiles/compiler.dir/src/asm.c.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/src/asm.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
+CMakeFiles/compiler.dir/src/asm.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/asm.c
+CMakeFiles/compiler.dir/src/asm.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/compiler.dir/src/asm.c.obj"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/asm.c.obj -MF CMakeFiles\compiler.dir\src\asm.c.obj.d -o CMakeFiles\compiler.dir\src\asm.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\asm.c
+
+CMakeFiles/compiler.dir/src/asm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compiler.dir/src/asm.c.i"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Mikec\CLionProjects\Compiler\src\asm.c > CMakeFiles\compiler.dir\src\asm.c.i
+
+CMakeFiles/compiler.dir/src/asm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compiler.dir/src/asm.c.s"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Mikec\CLionProjects\Compiler\src\asm.c -o CMakeFiles\compiler.dir\src\asm.c.s
+
+CMakeFiles/compiler.dir/src/ast.c.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/src/ast.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
+CMakeFiles/compiler.dir/src/ast.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/ast.c
+CMakeFiles/compiler.dir/src/ast.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/compiler.dir/src/ast.c.obj"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/ast.c.obj -MF CMakeFiles\compiler.dir\src\ast.c.obj.d -o CMakeFiles\compiler.dir\src\ast.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\ast.c
+
+CMakeFiles/compiler.dir/src/ast.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compiler.dir/src/ast.c.i"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Mikec\CLionProjects\Compiler\src\ast.c > CMakeFiles\compiler.dir\src\ast.c.i
+
+CMakeFiles/compiler.dir/src/ast.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compiler.dir/src/ast.c.s"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Mikec\CLionProjects\Compiler\src\ast.c -o CMakeFiles\compiler.dir\src\ast.c.s
+
 CMakeFiles/compiler.dir/src/codegen.c.obj: CMakeFiles/compiler.dir/flags.make
 CMakeFiles/compiler.dir/src/codegen.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
 CMakeFiles/compiler.dir/src/codegen.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/codegen.c
 CMakeFiles/compiler.dir/src/codegen.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/compiler.dir/src/codegen.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/compiler.dir/src/codegen.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/codegen.c.obj -MF CMakeFiles\compiler.dir\src\codegen.c.obj.d -o CMakeFiles\compiler.dir\src\codegen.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\codegen.c
 
 CMakeFiles/compiler.dir/src/codegen.c.i: cmake_force
@@ -86,11 +131,26 @@ CMakeFiles/compiler.dir/src/codegen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compiler.dir/src/codegen.c.s"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Mikec\CLionProjects\Compiler\src\codegen.c -o CMakeFiles\compiler.dir\src\codegen.c.s
 
+CMakeFiles/compiler.dir/src/ir.c.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/src/ir.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
+CMakeFiles/compiler.dir/src/ir.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/ir.c
+CMakeFiles/compiler.dir/src/ir.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/compiler.dir/src/ir.c.obj"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/ir.c.obj -MF CMakeFiles\compiler.dir\src\ir.c.obj.d -o CMakeFiles\compiler.dir\src\ir.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\ir.c
+
+CMakeFiles/compiler.dir/src/ir.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compiler.dir/src/ir.c.i"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Mikec\CLionProjects\Compiler\src\ir.c > CMakeFiles\compiler.dir\src\ir.c.i
+
+CMakeFiles/compiler.dir/src/ir.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compiler.dir/src/ir.c.s"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Mikec\CLionProjects\Compiler\src\ir.c -o CMakeFiles\compiler.dir\src\ir.c.s
+
 CMakeFiles/compiler.dir/src/lexer.c.obj: CMakeFiles/compiler.dir/flags.make
 CMakeFiles/compiler.dir/src/lexer.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
 CMakeFiles/compiler.dir/src/lexer.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/lexer.c
 CMakeFiles/compiler.dir/src/lexer.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/compiler.dir/src/lexer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/compiler.dir/src/lexer.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/lexer.c.obj -MF CMakeFiles\compiler.dir\src\lexer.c.obj.d -o CMakeFiles\compiler.dir\src\lexer.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\lexer.c
 
 CMakeFiles/compiler.dir/src/lexer.c.i: cmake_force
@@ -101,11 +161,26 @@ CMakeFiles/compiler.dir/src/lexer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compiler.dir/src/lexer.c.s"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Mikec\CLionProjects\Compiler\src\lexer.c -o CMakeFiles\compiler.dir\src\lexer.c.s
 
+CMakeFiles/compiler.dir/src/logger.c.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/src/logger.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
+CMakeFiles/compiler.dir/src/logger.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/logger.c
+CMakeFiles/compiler.dir/src/logger.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/compiler.dir/src/logger.c.obj"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/logger.c.obj -MF CMakeFiles\compiler.dir\src\logger.c.obj.d -o CMakeFiles\compiler.dir\src\logger.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\logger.c
+
+CMakeFiles/compiler.dir/src/logger.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/compiler.dir/src/logger.c.i"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Mikec\CLionProjects\Compiler\src\logger.c > CMakeFiles\compiler.dir\src\logger.c.i
+
+CMakeFiles/compiler.dir/src/logger.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/compiler.dir/src/logger.c.s"
+	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Mikec\CLionProjects\Compiler\src\logger.c -o CMakeFiles\compiler.dir\src\logger.c.s
+
 CMakeFiles/compiler.dir/src/main.c.obj: CMakeFiles/compiler.dir/flags.make
 CMakeFiles/compiler.dir/src/main.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
 CMakeFiles/compiler.dir/src/main.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/main.c
 CMakeFiles/compiler.dir/src/main.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/compiler.dir/src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/compiler.dir/src/main.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/main.c.obj -MF CMakeFiles\compiler.dir\src\main.c.obj.d -o CMakeFiles\compiler.dir\src\main.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\main.c
 
 CMakeFiles/compiler.dir/src/main.c.i: cmake_force
@@ -120,7 +195,7 @@ CMakeFiles/compiler.dir/src/parser.c.obj: CMakeFiles/compiler.dir/flags.make
 CMakeFiles/compiler.dir/src/parser.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
 CMakeFiles/compiler.dir/src/parser.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/parser.c
 CMakeFiles/compiler.dir/src/parser.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/compiler.dir/src/parser.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/compiler.dir/src/parser.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/parser.c.obj -MF CMakeFiles\compiler.dir\src\parser.c.obj.d -o CMakeFiles\compiler.dir\src\parser.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\parser.c
 
 CMakeFiles/compiler.dir/src/parser.c.i: cmake_force
@@ -135,7 +210,7 @@ CMakeFiles/compiler.dir/src/semantic.c.obj: CMakeFiles/compiler.dir/flags.make
 CMakeFiles/compiler.dir/src/semantic.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
 CMakeFiles/compiler.dir/src/semantic.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/semantic.c
 CMakeFiles/compiler.dir/src/semantic.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/compiler.dir/src/semantic.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/compiler.dir/src/semantic.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/semantic.c.obj -MF CMakeFiles\compiler.dir\src\semantic.c.obj.d -o CMakeFiles\compiler.dir\src\semantic.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\semantic.c
 
 CMakeFiles/compiler.dir/src/semantic.c.i: cmake_force
@@ -150,7 +225,7 @@ CMakeFiles/compiler.dir/src/utils.c.obj: CMakeFiles/compiler.dir/flags.make
 CMakeFiles/compiler.dir/src/utils.c.obj: CMakeFiles/compiler.dir/includes_C.rsp
 CMakeFiles/compiler.dir/src/utils.c.obj: C:/Users/Mikec/CLionProjects/Compiler/src/utils.c
 CMakeFiles/compiler.dir/src/utils.c.obj: CMakeFiles/compiler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/compiler.dir/src/utils.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/compiler.dir/src/utils.c.obj"
 	C:\msys64\ucrt64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/compiler.dir/src/utils.c.obj -MF CMakeFiles\compiler.dir\src\utils.c.obj.d -o CMakeFiles\compiler.dir\src\utils.c.obj -c C:\Users\Mikec\CLionProjects\Compiler\src\utils.c
 
 CMakeFiles/compiler.dir/src/utils.c.i: cmake_force
@@ -163,8 +238,13 @@ CMakeFiles/compiler.dir/src/utils.c.s: cmake_force
 
 # Object files for target compiler
 compiler_OBJECTS = \
+"CMakeFiles/compiler.dir/src/address_table.c.obj" \
+"CMakeFiles/compiler.dir/src/asm.c.obj" \
+"CMakeFiles/compiler.dir/src/ast.c.obj" \
 "CMakeFiles/compiler.dir/src/codegen.c.obj" \
+"CMakeFiles/compiler.dir/src/ir.c.obj" \
 "CMakeFiles/compiler.dir/src/lexer.c.obj" \
+"CMakeFiles/compiler.dir/src/logger.c.obj" \
 "CMakeFiles/compiler.dir/src/main.c.obj" \
 "CMakeFiles/compiler.dir/src/parser.c.obj" \
 "CMakeFiles/compiler.dir/src/semantic.c.obj" \
@@ -173,8 +253,13 @@ compiler_OBJECTS = \
 # External object files for target compiler
 compiler_EXTERNAL_OBJECTS =
 
+compiler.exe: CMakeFiles/compiler.dir/src/address_table.c.obj
+compiler.exe: CMakeFiles/compiler.dir/src/asm.c.obj
+compiler.exe: CMakeFiles/compiler.dir/src/ast.c.obj
 compiler.exe: CMakeFiles/compiler.dir/src/codegen.c.obj
+compiler.exe: CMakeFiles/compiler.dir/src/ir.c.obj
 compiler.exe: CMakeFiles/compiler.dir/src/lexer.c.obj
+compiler.exe: CMakeFiles/compiler.dir/src/logger.c.obj
 compiler.exe: CMakeFiles/compiler.dir/src/main.c.obj
 compiler.exe: CMakeFiles/compiler.dir/src/parser.c.obj
 compiler.exe: CMakeFiles/compiler.dir/src/semantic.c.obj
@@ -183,7 +268,7 @@ compiler.exe: CMakeFiles/compiler.dir/build.make
 compiler.exe: CMakeFiles/compiler.dir/linkLibs.rsp
 compiler.exe: CMakeFiles/compiler.dir/objects1.rsp
 compiler.exe: CMakeFiles/compiler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable compiler.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Mikec\CLionProjects\Compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable compiler.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\compiler.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -2,6 +2,8 @@ CMakeFiles/compiler.dir/src/parser.c.obj: \
  C:\Users\Mikec\CLionProjects\Compiler\src\parser.c \
  C:/Users/Mikec/CLionProjects/Compiler/include/parser.h \
  C:/Users/Mikec/CLionProjects/Compiler/include/lexer.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/ast.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/logger.h \
  C:/msys64/ucrt64/include/stdio.h \
  C:/msys64/ucrt64/include/corecrt_stdio_config.h \
  C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \

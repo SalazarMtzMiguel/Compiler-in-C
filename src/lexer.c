@@ -1,23 +1,29 @@
+// lexer.c
+
 #include "../include/lexer.h"
 #include "../include/semantic.h"
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
 
-// List of recognized keywords
-const char *keywords[] = {"int", "char", "if", "else", "while", "for", "return", "void", "print", "break", "input"};
+// Lista de palabras clave reconocidas
+const char *keywords[] = {"int", "char", "if", "else", "while", "for", "return", "void", "print", "break", "string", "main", "fun"};
 
-// List of recognized operators
+// Lista de operadores reconocidos
 const char *operators[] = {"+", "-", "*", "/", "%", "==", "!=", "<", ">", "<=", ">=", "&&", "||", "="};
 
-// List of recognized symbols
+// Lista de simbolos reconocidos
 const char *symbols[] = {"{", "}", "(", ")", "[", "]", ";", ","};
 
-// Constants to calculate the number of elements in each list
+// Constantes para calcular el numero de elementos en cada lista
 #define KEYWORD_COUNT (sizeof(keywords) / sizeof(keywords[0]))
 #define OPERATOR_COUNT (sizeof(operators) / sizeof(operators[0]))
 #define SYMBOL_COUNT (sizeof(symbols) / sizeof(symbols[0]))
 
+// Verifica si una cadena es una palabra clave
+// Parametros:
+// - str: la cadena a verificar
+// Retorna: 1 si es una palabra clave, 0 en caso contrario
 int is_keyword(const char *str) {
     for (int i = 0; i < KEYWORD_COUNT; i++) {
         if (strcmp(str, keywords[i]) == 0) {
@@ -27,6 +33,10 @@ int is_keyword(const char *str) {
     return 0;
 }
 
+// Verifica si una cadena es un operador
+// Parametros:
+// - str: la cadena a verificar
+// Retorna: 1 si es un operador, 0 en caso contrario
 int is_operator(const char *str) {
     for (int i = 0; i < OPERATOR_COUNT; i++) {
         if (strcmp(str, operators[i]) == 0) {
@@ -36,6 +46,10 @@ int is_operator(const char *str) {
     return 0;
 }
 
+// Verifica si una cadena es un simbolo
+// Parametros:
+// - str: la cadena a verificar
+// Retorna: 1 si es un simbolo, 0 en caso contrario
 int is_symbol(const char *str) {
     for (int i = 0; i < SYMBOL_COUNT; i++) {
         if (strcmp(str, symbols[i]) == 0) {
@@ -45,15 +59,23 @@ int is_symbol(const char *str) {
     return 0;
 }
 
+// Obtiene el siguiente token de la entrada
+// Parametros:
+// - input: puntero a la cadena de entrada
+// Retorna: el siguiente token
 Token get_next_token(const char **input) {
     Token token;
     token.type = TOKEN_UNKNOWN;
     token.value[0] = '\0';
 
-    // Skip whitespace
+    // Saltar espacios en blanco
     while (isspace(**input)) (*input)++;
 
-    // Identify single-character symbols
+    if (**input == '\0') {
+        return token; // Fin de la entrada
+    }
+
+    // Identificar simbolos de un solo caracter
     char symbol[2] = {*(*input), '\0'};
     if (is_symbol(symbol)) {
         token.value[0] = *(*input)++;
@@ -62,7 +84,7 @@ Token get_next_token(const char **input) {
         return token;
     }
 
-    // Identify operators (one or two characters)
+    // Identificar operadores (uno o dos caracteres)
     char op[3] = {*(*input), *(*input + 1), '\0'};
     if (is_operator(op)) {
         token.value[0] = *(*input)++;
@@ -80,7 +102,7 @@ Token get_next_token(const char **input) {
         }
     }
 
-    // Identify keywords or identifiers
+    // Identificar palabras clave o identificadores
     if (isalpha(**input) || **input == '_') {
         int length = 0;
         while (isalnum(**input) || **input == '_') {
@@ -91,7 +113,7 @@ Token get_next_token(const char **input) {
         return token;
     }
 
-    // Identify numbers
+    // Identificar numeros
     if (isdigit(**input)) {
         int length = 0;
         while (isdigit(**input)) {
@@ -102,7 +124,7 @@ Token get_next_token(const char **input) {
         return token;
     }
 
-    // Identify character literals
+    // Identificar literales de caracteres
     if (**input == '\'') {
         (*input)++;
         if (**input != '\0' && *(*input + 1) == '\'') {
@@ -116,7 +138,7 @@ Token get_next_token(const char **input) {
         return token;
     }
 
-    // Identify string literals
+    // Identificar literales de cadenas
     if (**input == '\"') {
         int length = 0;
         (*input)++;
@@ -133,5 +155,7 @@ Token get_next_token(const char **input) {
         return token;
     }
 
+    fprintf(stderr, "Error lexico: caracter no reconocido '%c'\n", **input);
+    (*input)++;
     return token;
 }

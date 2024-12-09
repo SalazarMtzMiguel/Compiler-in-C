@@ -22,4 +22,12 @@ CMakeFiles/compiler.dir/src/main.c.obj: \
  C:/Users/Mikec/CLionProjects/Compiler/include/lexer.h \
  C:/Users/Mikec/CLionProjects/Compiler/include/parser.h \
  C:/Users/Mikec/CLionProjects/Compiler/include/lexer.h \
- C:/Users/Mikec/CLionProjects/Compiler/include/semantic.h
+ C:/Users/Mikec/CLionProjects/Compiler/include/ast.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/ir.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/codegen.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/ir.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/address_table.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/asm.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/utils.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/logger.h \
+ C:/Users/Mikec/CLionProjects/Compiler/include/address_table.h

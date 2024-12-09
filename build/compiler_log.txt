@@ -1,0 +1,100 @@
+Iniciando el proceso de compilacion
+Parser inicializado con entrada: main() {
+    int a = 5;
+    int b = 10;
+    int c = a + b;
+    print(a);
+    print(b);
+    print(c);
+    if (c > 10) {
+        print("c es mayor que 10");
+    } else {
+        print("c es menor o igual a 10");
+    }
+}
+Parseando programa
+Parseando declaracion: main
+Avanzado al siguiente token: (
+Avanzado al siguiente token: )
+Avanzado al siguiente token: {
+Avanzado al siguiente token: int
+Parseando bloque
+Parseando declaracion: int
+Avanzado al siguiente token: a
+Avanzado al siguiente token: =
+Avanzado al siguiente token: 5
+Parseando expresion: 5
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: int
+Parseando declaracion: int
+Avanzado al siguiente token: b
+Avanzado al siguiente token: =
+Avanzado al siguiente token: 10
+Parseando expresion: 10
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: int
+Parseando declaracion: int
+Avanzado al siguiente token: c
+Avanzado al siguiente token: =
+Avanzado al siguiente token: a
+Parseando expresion: a
+Avanzado al siguiente token: +
+Avanzado al siguiente token: b
+Parseando expresion: b
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: print
+Parseando declaracion: print
+Avanzado al siguiente token: (
+Avanzado al siguiente token: a
+Parseando expresion: a
+Avanzado al siguiente token: )
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: print
+Parseando declaracion: print
+Avanzado al siguiente token: (
+Avanzado al siguiente token: b
+Parseando expresion: b
+Avanzado al siguiente token: )
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: print
+Parseando declaracion: print
+Avanzado al siguiente token: (
+Avanzado al siguiente token: c
+Parseando expresion: c
+Avanzado al siguiente token: )
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: if
+Parseando declaracion: if
+Avanzado al siguiente token: (
+Avanzado al siguiente token: c
+Parseando expresion: c
+Avanzado al siguiente token: >
+Avanzado al siguiente token: 10
+Parseando expresion: 10
+Avanzado al siguiente token: )
+Avanzado al siguiente token: {
+Avanzado al siguiente token: print
+Parseando bloque
+Parseando declaracion: print
+Avanzado al siguiente token: (
+Avanzado al siguiente token: c es mayor que 10
+Parseando expresion: c es mayor que 10
+Avanzado al siguiente token: )
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: }
+Avanzado al siguiente token: else
+Avanzado al siguiente token: {
+Avanzado al siguiente token: print
+Parseando bloque
+Parseando declaracion: print
+Avanzado al siguiente token: (
+Avanzado al siguiente token: c es menor o igual a 10
+Parseando expresion: c es menor o igual a 10
+Avanzado al siguiente token: )
+Avanzado al siguiente token: ;
+Avanzado al siguiente token: }
+Avanzado al siguiente token: }
+Avanzado al siguiente token: 
+Avanzado al siguiente token: 
+Generando IR para el programa
+Proceso de compilacion finalizado
