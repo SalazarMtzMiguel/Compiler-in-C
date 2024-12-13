@@ -6,6 +6,9 @@
 #include <parser.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+//LISTO PARA CODEREVIEW
+
 // src/main.c
 int main(int argc, char *argv[]) {
     // Verifica que se haya proporcionado un archivo de entrada
