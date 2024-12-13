@@ -5,4 +5,15 @@ main() {
     print(a);
     print(b);
     print(c);
+
+    if (c > 10) {
+        print("c es mayor que 10");
+    } else {
+        print("c es menor o igual a 10");
+    }
+
+    while (a < b) {
+        a = a + 1;
+        print(a);
+    }
 }
